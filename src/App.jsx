@@ -1,9 +1,11 @@
+import { BrowserRouter } from 'react-router-dom';
+import AppLayout from './ui/AppLayout';
+
 function App() {
   return (
-    <div>
-      Hello! My name is Keddy Conway, and this is my portfolio website
-      (eventually!)
-    </div>
+    <BrowserRouter>
+      <AppLayout />
+    </BrowserRouter>
   );
 }
 

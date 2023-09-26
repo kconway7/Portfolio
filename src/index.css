@@ -1,0 +1,26 @@
+/*
+Colors:
+
+main-colors: 
+#0e131a
+#6812da
+
+
+Shades And Tints:
+#0a0d12
+#262b31
+
+*/
+
+* {
+  font-family: 'Karla', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #0e131a;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
