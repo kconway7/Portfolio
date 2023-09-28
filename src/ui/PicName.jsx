@@ -4,6 +4,8 @@ const StyledImage = styled.img`
   height: 8rem;
   display: block;
   margin: 4.8rem auto 0 auto;
+  border: 6px solid white;
+  border-radius: 100%;
 `;
 
 const StyledPicName = styled.div`

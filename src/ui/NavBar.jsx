@@ -2,7 +2,12 @@ import styled from 'styled-components';
 import NavButton from './NavButton';
 import PicName from './PicName';
 import LinkIcons from './LinkIcons';
-import { FaHome, FaPortrait, FaProjectDiagram } from 'react-icons/fa';
+import {
+  FaHome,
+  FaPortrait,
+  FaProjectDiagram,
+  FaGraduationCap,
+} from 'react-icons/fa';
 import { GrMail } from 'react-icons/gr';
 
 const StyledNavBar = styled.ul`
@@ -24,6 +29,11 @@ const StyledNavBar = styled.ul`
 
   background-color: #0a0d12;
 
+  li:last-of-type {
+    margin-top: auto;
+    margin-bottom: 20px;
+  }
+
   /* @media only screen and (max-width: 1000px) {
     gap: 10px;
   } */
@@ -32,7 +42,6 @@ const StyledNavBar = styled.ul`
 const StyledListItem = styled.li`
   display: flex;
   flex-direction: column;
-  margin-bottom: 120px;
 `;
 
 function NavBar() {
@@ -49,6 +58,10 @@ function NavBar() {
         <NavButton>
           <FaPortrait />
           About Me
+        </NavButton>
+        <NavButton>
+          <FaGraduationCap />
+          Education/Skills
         </NavButton>
         <NavButton>
           <FaProjectDiagram />

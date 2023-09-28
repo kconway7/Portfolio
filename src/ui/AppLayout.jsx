@@ -1,10 +1,12 @@
 // import styled from 'styled-components';
 import styled from 'styled-components';
 import NavBar from './NavBar';
+import Home from '../pages/Home';
+import AboutMe from '../pages/AboutMe';
 
 const Main = styled.div`
   height: 3000px;
-  background-image: linear-gradient(#0e131a, #0f0120);
+  background-color: #0e131a;
   position: relative;
   width: calc(100vw - 200px);
   left: 250px;
@@ -22,7 +24,10 @@ function AppLayout() {
   return (
     <StyledAppLayout>
       <NavBar />
-      <Main></Main>
+      <Main>
+        <Home />
+        <AboutMe />
+      </Main>
     </StyledAppLayout>
   );
 }
