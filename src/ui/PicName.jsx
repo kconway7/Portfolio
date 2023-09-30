@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 const StyledImage = styled.img`
   height: 8rem;
+  height: 16vh;
   display: block;
-  margin: 4.8rem auto 0 auto;
+  margin: 7vh auto 0 auto;
   border: 6px solid white;
   border-radius: 100%;
 `;

@@ -10,8 +10,12 @@ const StyledLinkIcons = styled.div`
     height: 1.2rem;
     width: 1.2rem;
 
+    transition: ease-in-out;
+    transition-duration: 200ms;
+    cursor: pointer;
+
     &:hover {
-      color: purple;
+      color: #6812da;
     }
   }
 `;

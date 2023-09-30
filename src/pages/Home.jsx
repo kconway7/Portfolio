@@ -3,8 +3,6 @@ import Button from '../ui/Button';
 import Section from '../ui/Section';
 
 const StyledHome = styled.div`
-  display: flex;
-
   color: #e7e7e8;
   /* background-color: white; */
   /* border: 1px solid white; */
@@ -21,9 +19,6 @@ const StyledHome = styled.div`
 
   position: relative;
   z-index: 2;
-
-  & button {
-  }
 `;
 
 const Introduction = styled.div`
@@ -75,7 +70,9 @@ function Home() {
             eager to learn more and make contributions, then contact me
             whenever!
           </StyledParagraph>
-          <Button message="Download CV" />
+          <Button width={'160px'} height={'40px'}>
+            Download CV
+          </Button>
         </Introduction>
         <StyledImage src="/DefaultPic.svg"></StyledImage>
       </StyledHome>

@@ -23,11 +23,13 @@ const StyledNavBar = styled.ul`
 
   margin: 0;
   padding: 0;
-  width: 250px;
+  width: 14vw;
+  min-width: 250px;
   height: 100vh;
   gap: 250px;
 
   background-color: #0a0d12;
+  overflow: hidden;
 
   li:last-of-type {
     margin-top: auto;
@@ -37,6 +39,16 @@ const StyledNavBar = styled.ul`
   /* @media only screen and (max-width: 1000px) {
     gap: 10px;
   } */
+`;
+
+const StyledCircle = styled.div`
+  background-color: #6812da;
+  position: absolute;
+  width: 33vh;
+  height: 33vh;
+  top: -10vh;
+  border-radius: 50%;
+  z-index: -1;
 `;
 
 const StyledListItem = styled.li`
@@ -75,6 +87,7 @@ function NavBar() {
       <li style={{ color: 'white' }}>
         <LinkIcons />
       </li>
+      <StyledCircle />
     </StyledNavBar>
   );
 }

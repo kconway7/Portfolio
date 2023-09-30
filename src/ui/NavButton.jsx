@@ -11,18 +11,24 @@ const NavButton = styled.button`
   border: none;
   border-bottom: 1px solid #262b31;
   padding: 0.8rem;
-  width: 250px;
+  width: 14vw;
+  min-width: 250px;
 
   font-size: 1.3rem;
   line-height: 1.6;
   font-weight: lighter;
   gap: 0.8rem;
 
+  transition: ease-in-out;
+  transition-duration: 200ms;
+
   & svg {
     width: 1.4rem;
     height: 1.4rem;
     color: white;
     margin-left: 0.6rem;
+    transition: ease-in-out;
+    transition-duration: 200ms;
   }
 
   &:hover {
