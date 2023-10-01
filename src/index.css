@@ -7,7 +7,7 @@ main-colors:
 
 
 Shades:
-#charcoal #0a0d12
+#charcoal #0a0d12, #07090c
 
 
 Tints:
@@ -18,6 +18,8 @@ $purple #f0e7fb
 
 * {
   font-family: 'Karla', sans-serif;
+  color: #f0e7fb;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -27,4 +29,19 @@ body {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+/* Active classes for scrollspy */
+.active {
+  font-weight: 700 !important;
+  color: #6812da !important;
+}
+
+.active svg {
+  fill: #6812da !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
 }

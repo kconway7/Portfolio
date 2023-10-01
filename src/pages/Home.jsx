@@ -59,7 +59,7 @@ const StyledCircle = styled.div`
 
 function Home() {
   return (
-    <Section height={`100vh`}>
+    <Section height={`100vh`} id="home">
       <StyledHome>
         <Introduction>
           <StyledName>Keddy Conway</StyledName>

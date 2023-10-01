@@ -2,7 +2,7 @@ import Section from '../ui/Section';
 
 function AboutMe() {
   return (
-    <Section height={'100vh'} bgColor={'purple'}>
+    <Section height={'100vh'} id="about">
       ABOUT ME
     </Section>
   );

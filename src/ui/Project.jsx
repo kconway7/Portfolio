@@ -103,15 +103,3 @@ function Project({
 }
 
 export default Project;
-
-{
-  /* <div>
-<img src={pictures[0]} />
-</div>
-<div>
-<img src={pictures[1]} />
-</div>
-<div>
-<img src={pictures[2]} />
-</div> */
-}

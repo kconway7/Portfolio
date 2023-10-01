@@ -9,6 +9,8 @@ import {
   FaGraduationCap,
 } from 'react-icons/fa';
 import { GrMail } from 'react-icons/gr';
+import '../index.css';
+import { useEffect, useState } from 'react';
 
 const StyledNavBar = styled.ul`
   display: flex;
@@ -57,34 +59,91 @@ const StyledListItem = styled.li`
 `;
 
 function NavBar() {
+  // State to track the active Link and scroll State
+  const [activeLink, setActiveLink] = useState('home');
+
+  // Function to smoothly scroll to a section by its ID
+  function scrollToId(sectionId) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      //Adjust the margin top value as needed
+      const marginTop = 0;
+      const scrollToY =
+        element.getBoundingClientRect().top + window.scrollY - marginTop;
+      window.scrollTo({ top: scrollToY, behavior: 'smooth' });
+    }
+  }
+
+  useEffect(() => {
+    const sectionIds = ['home', 'about', 'education', 'projects', 'contact'];
+    // Function to determine the active section while scrolling
+    function getActiveSection() {
+      for (let i = sectionIds.length - 1; i >= 0; i--) {
+        const section = document.getElementById(sectionIds[i]);
+        // console.log(section);
+        if (section !== null) {
+          const rect = section.getBoundingClientRect();
+          console.log('rect', rect);
+          if (rect.top <= 360 && rect.bottom >= 120) {
+            //Set the active link based on the section Id
+            setActiveLink(sectionIds[i]);
+            break;
+          }
+        }
+      }
+    }
+
+    window.addEventListener('scroll', getActiveSection);
+
+    //remove the scroll event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', getActiveSection);
+    };
+  }, []);
+
   return (
     <StyledNavBar>
-      <li style={{ color: 'white' }}>
+      <li>
         <PicName />
       </li>
       <StyledListItem>
-        <NavButton>
+        <NavButton
+          onClick={() => scrollToId('home')}
+          className={activeLink === 'home' ? 'active' : ''}
+        >
           <FaHome />
           Home
         </NavButton>
-        <NavButton>
+        <NavButton
+          onClick={() => scrollToId('about')}
+          className={activeLink === 'about' ? 'active' : ''}
+        >
           <FaPortrait />
           About Me
         </NavButton>
-        <NavButton>
+        <NavButton
+          onClick={() => scrollToId('education')}
+          className={activeLink === 'education' ? 'active' : ''}
+        >
           <FaGraduationCap />
           Education/Skills
         </NavButton>
-        <NavButton>
+        <NavButton
+          onClick={() => scrollToId('projects')}
+          className={activeLink === 'projects' ? 'active' : ''}
+        >
           <FaProjectDiagram />
           Projects
         </NavButton>
-        <NavButton>
+        <NavButton
+          onClick={() => scrollToId('contact')}
+          className={activeLink === 'contact' ? 'active' : ''}
+        >
           <GrMail />
           Contact Me
         </NavButton>
       </StyledListItem>
-      <li style={{ color: 'white' }}>
+      <li>
         <LinkIcons />
       </li>
       <StyledCircle />

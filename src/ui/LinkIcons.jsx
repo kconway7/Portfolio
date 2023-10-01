@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const StyledLinkIcons = styled.div`
   display: flex;
   gap: 1rem;
-  /* padding-top: 200px; */
 
   & svg {
     height: 1.2rem;
@@ -15,7 +14,7 @@ const StyledLinkIcons = styled.div`
     cursor: pointer;
 
     &:hover {
-      color: #6812da;
+      fill: #6812da;
     }
   }
 `;
@@ -23,8 +22,12 @@ const StyledLinkIcons = styled.div`
 function LinkIcons() {
   return (
     <StyledLinkIcons>
-      <FaGithub />
-      <FaLinkedinIn />
+      <a href="https://github.com/kconway7">
+        <FaGithub />
+      </a>
+      <a href="https://www.linkedin.com/in/keddy-conway-572a2b1b5/">
+        <FaLinkedinIn />
+      </a>
     </StyledLinkIcons>
   );
 }

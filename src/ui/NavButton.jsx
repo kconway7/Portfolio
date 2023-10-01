@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const NavButton = styled.button`
+const NavButton = styled.a`
   display: flex;
   text-align: left;
   align-items: center;
@@ -21,6 +21,7 @@ const NavButton = styled.button`
 
   transition: ease-in-out;
   transition-duration: 200ms;
+  text-decoration: none;
 
   & svg {
     width: 1.4rem;
@@ -33,10 +34,10 @@ const NavButton = styled.button`
 
   &:hover {
     & svg {
-      color: #6812da;
+      fill: #6812da;
     }
 
-    font-weight: 600;
+    font-weight: 700;
     color: #6812da;
   }
 `;

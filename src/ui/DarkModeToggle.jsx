@@ -6,7 +6,6 @@ const StyledButton = styled.button`
   height: 55px;
   background-color: #f0e7fb;
   border-radius: 50%;
-  color: orange;
   border: 0;
 
   font-size: 2.2rem;
@@ -16,14 +15,15 @@ const StyledButton = styled.button`
   cursor: pointer;
 
   position: absolute;
-  right: 0;
+  top: 10px;
+  right: 10px;
   z-index: 6;
 `;
 
 function DarkModeToggle() {
   return (
     <StyledButton>
-      <FaSun />
+      <FaSun style={{ fill: 'orange' }} />
     </StyledButton>
   );
 }

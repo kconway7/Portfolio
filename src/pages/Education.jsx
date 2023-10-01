@@ -15,7 +15,7 @@ const StyledEducation = styled.div`
   position: relative;
   z-index: 2;
 
-  &:before {
+  /* &:before {
     height: 2px;
     width: 1200px;
     background-color: #262b31;
@@ -31,7 +31,7 @@ const StyledEducation = styled.div`
     content: '';
     position: absolute;
     bottom: -10vh;
-  }
+  } */
 `;
 
 const SkillsAndEdu = styled.div`
@@ -40,7 +40,7 @@ const SkillsAndEdu = styled.div`
 
 function Education() {
   return (
-    <Section height={'100vh'}>
+    <Section height={'100vh'} id="education">
       <StyledEducation>
         <div>
           <h3>Education &amp; Skills</h3>

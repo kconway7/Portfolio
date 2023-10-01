@@ -5,7 +5,7 @@ import Section from '../ui/Section';
 const Grid = styled.div`
   display: grid;
   grid-template-columns: auto auto;
-  gap: 36px;
+  gap: 28px;
   margin-left: 80px;
 `;
 
@@ -13,8 +13,8 @@ const Heading = styled.h1`
   color: #f0e7fb;
   text-align: center;
   font-size: 3.6rem;
-  margin-top: -30px;
   position: relative;
+  font-weight: 400;
 
   &:before {
     width: 100px;
@@ -42,7 +42,7 @@ const Heading = styled.h1`
 
 function Projects() {
   return (
-    <Section height={'100vh'}>
+    <Section height={'1080px'} id="projects">
       <Heading>PROJECTS</Heading>
       <Grid>
         <Project
