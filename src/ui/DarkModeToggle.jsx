@@ -14,10 +14,14 @@ const StyledButton = styled.button`
   align-items: center;
   cursor: pointer;
 
-  position: absolute;
+  position: fixed;
   top: 10px;
-  right: 10px;
+  right: 17px;
   z-index: 6;
+
+  @media screen and (max-width: 1150px) {
+    top: 80px;
+  }
 `;
 
 function DarkModeToggle() {

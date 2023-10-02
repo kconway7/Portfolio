@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const StyledImage = styled.img`
   height: 8rem;
-  height: 16vh;
+  height: 150px;
   display: block;
   margin: 7vh auto 0 auto;
   border: 6px solid white;

@@ -11,8 +11,7 @@ const NavButton = styled.a`
   border: none;
   border-bottom: 1px solid #262b31;
   padding: 0.8rem;
-  width: 14vw;
-  min-width: 250px;
+  width: 280px;
 
   font-size: 1.3rem;
   line-height: 1.6;

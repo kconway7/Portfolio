@@ -45,3 +45,13 @@ input:-webkit-autofill,
 input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
 }
+
+.nav-closed {
+  left: -280px !important;
+}
+
+.test {
+  font-size: 1.4rem !important;
+  font-weight: 500;
+  padding-right: 7px;
+}

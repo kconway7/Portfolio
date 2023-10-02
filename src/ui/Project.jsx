@@ -13,11 +13,12 @@ const StyledProject = styled.div`
   transition-duration: 250ms;
   box-shadow: 5px 5px 3px #07090c;
 
-  /* Temp */
-  /* margin-left: 300px; */
-
   &:hover {
     background-color: #0d0f14;
+  }
+
+  @media only screen and (max-width: 1730px) {
+    width: 850px;
   }
 `;
 
@@ -49,8 +50,18 @@ const Technologies = styled.h3`
 const ButtonBox = styled.div`
   display: flex;
   gap: 32px;
-  position: absolute;
-  bottom: 6px;
+  position: relative;
+  margin-top: 26px;
+
+  @media only screen and (max-width: 1730px) {
+    justify-content: space-around;
+    margin-top: 50px;
+
+    & button {
+      width: 200px !important;
+      height: 40px !important;
+    }
+  }
 `;
 
 const SecondDiv = styled.div`
@@ -63,6 +74,8 @@ function Project({
   description,
   name,
   tech,
+  hrefDemo,
+  hrefCode,
 }) {
   return (
     <StyledProject>
@@ -89,10 +102,10 @@ function Project({
           <Technologies>TECH USED: {tech}</Technologies>
           <Description>{description}</Description>
           <ButtonBox>
-            <Button height={'30px'} width={'120px'}>
+            <Button href={hrefDemo} height={'30px'} width={'120px'}>
               View Demo
             </Button>
-            <Button height={'30px'} width={'120px'}>
+            <Button href={hrefCode} height={'30px'} width={'120px'}>
               View Code
             </Button>
           </ButtonBox>

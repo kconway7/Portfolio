@@ -1,57 +1,56 @@
 import styled from 'styled-components';
 import Section from '../ui/Section';
+import Container from '../ui/Container';
+import Heading from '../ui/Heading';
+import EducationComponent from '../ui/EducationComponent';
+import SkillComponent from '../ui/SkillComponent';
 
-const StyledEducation = styled.div`
-  color: white;
-  /* background-color: white; */
-  outline: 1px solid white;
+const StyledEducationAndSkills = styled.div`
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
 
-  width: 1200px;
+  width: 1100px;
   height: 600px;
   margin: auto;
-  margin-top: 0;
-  top: 20%;
-
-  position: relative;
-  z-index: 2;
-
-  /* &:before {
-    height: 2px;
-    width: 1200px;
-    background-color: #262b31;
-    content: '';
-    position: absolute;
-    top: -10vh;
-  }
-
-  &:after {
-    height: 2px;
-    width: 1200px;
-    background-color: #262b31;
-    content: '';
-    position: absolute;
-    bottom: -10vh;
-  } */
 `;
 
-const SkillsAndEdu = styled.div`
+const Education = styled.div`
   display: flex;
+  flex-direction: column;
+  gap: 24px;
 `;
 
-function Education() {
+const Skills = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+`;
+
+function EducationPage() {
   return (
-    <Section height={'100vh'} id="education">
-      <StyledEducation>
-        <div>
-          <h3>Education &amp; Skills</h3>
-        </div>
-        <SkillsAndEdu>
-          <div>fdsa</div>
-          <div>fdsa</div>
-        </SkillsAndEdu>
-      </StyledEducation>
+    <Section height={'auto'} id="education">
+      <Container>
+        <Heading>Education/Skills</Heading>
+        <StyledEducationAndSkills>
+          <Education>
+            <Heading fontSize="1rem">Education</Heading>
+            <EducationComponent />
+            <EducationComponent />
+          </Education>
+          <Skills>
+            <Heading fontSize="1rem">Skills</Heading>
+            <SkillComponent />
+            <SkillComponent />
+            <SkillComponent />
+            <SkillComponent />
+            <SkillComponent />
+            <SkillComponent />
+          </Skills>
+        </StyledEducationAndSkills>
+      </Container>
     </Section>
   );
 }
 
-export default Education;
+export default EducationPage;

@@ -11,45 +11,17 @@ import styled from 'styled-components';
 import Section from '../ui/Section';
 import Button from '../ui/Button';
 import Spinner from '../ui/Spinner';
+import Container from '../ui/Container';
+import Heading from '../ui/Heading';
+import PhoneEmail from '../ui/PhoneEmail';
 
 const StyledContactMe = styled.form`
   background-color: #0a0d12;
   width: 1000px;
   height: 550px;
-  margin: auto;
-  margin-top: 60px;
   box-shadow: 7px 7px 4px #07090c;
-`;
-
-const Heading = styled.h1`
-  color: #f0e7fb;
-  text-align: center;
-  font-size: 3.6rem;
   position: relative;
-  font-weight: 400;
-
-  &:before {
-    width: 100px;
-    height: 3px;
-    background-color: #6812da;
-    position: absolute;
-    left: 650px;
-    top: 70px;
-
-    content: '';
-  }
-
-  &:after {
-    width: 10px;
-    height: 10px;
-    background-color: #6812da;
-    position: absolute;
-    left: 750px;
-    top: 66px;
-    border-radius: 50%;
-
-    content: '';
-  }
+  padding-bottom: 24px;
 `;
 
 const StyledHeader = styled.h2`
@@ -135,17 +107,15 @@ function ContactMe() {
   }
 
   return (
-    <Section height={'840px'} id="contact">
-      {isLoading ? (
-        <>
-          <Heading>GET IN TOUCH</Heading>
+    <Section height={'auto'} id="contact">
+      <Container>
+        <Heading>GET IN TOUCH</Heading>
+        <PhoneEmail />
+        {isLoading ? (
           <SpinnerContainer>
             <Spinner />
           </SpinnerContainer>
-        </>
-      ) : (
-        <>
-          <Heading>GET IN TOUCH</Heading>
+        ) : (
           <StyledContactMe ref={form} onSubmit={sendEmail}>
             <StyledHeader>Say Something</StyledHeader>
             <Row>
@@ -180,8 +150,8 @@ function ContactMe() {
               </Button>
             </StyledButtonBar>
           </StyledContactMe>
-        </>
-      )}
+        )}
+      </Container>
     </Section>
   );
 }

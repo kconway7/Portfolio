@@ -7,7 +7,7 @@ const StyledButton = styled.button`
 
   font-weight: 500;
   font-size: 1.1rem;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 
   cursor: pointer;
   transition: ease-in-out;
@@ -22,10 +22,12 @@ const StyledButton = styled.button`
   }
 `;
 
-function Button({ children, width, height }) {
+function Button({ children, width, height, href }) {
   return (
     <StyledButton style={{ width: width, height: height }}>
-      {children}
+      <a style={{ textDecoration: 'none' }} href={href}>
+        {children}
+      </a>
     </StyledButton>
   );
 }

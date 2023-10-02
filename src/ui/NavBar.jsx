@@ -9,8 +9,9 @@ import {
   FaGraduationCap,
 } from 'react-icons/fa';
 import { GrMail } from 'react-icons/gr';
-import '../index.css';
 import { useEffect, useState } from 'react';
+import '../index.css';
+import { useGlobalContext } from '../context/ContextProvider';
 
 const StyledNavBar = styled.ul`
   display: flex;
@@ -20,18 +21,18 @@ const StyledNavBar = styled.ul`
 
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 1000;
   position: fixed;
 
   margin: 0;
   padding: 0;
-  width: 14vw;
-  min-width: 250px;
+  width: 280px;
   height: 100vh;
   gap: 250px;
 
   background-color: #0a0d12;
   overflow: hidden;
+  transition: 0.5s;
 
   li:last-of-type {
     margin-top: auto;
@@ -46,9 +47,9 @@ const StyledNavBar = styled.ul`
 const StyledCircle = styled.div`
   background-color: #6812da;
   position: absolute;
-  width: 33vh;
-  height: 33vh;
-  top: -10vh;
+  width: 300px;
+  height: 300px;
+  top: -100px;
   border-radius: 50%;
   z-index: -1;
 `;
@@ -59,6 +60,8 @@ const StyledListItem = styled.li`
 `;
 
 function NavBar() {
+  const { isNavOpen } = useGlobalContext();
+
   // State to track the active Link and scroll State
   const [activeLink, setActiveLink] = useState('home');
 
@@ -83,7 +86,6 @@ function NavBar() {
         // console.log(section);
         if (section !== null) {
           const rect = section.getBoundingClientRect();
-          console.log('rect', rect);
           if (rect.top <= 360 && rect.bottom >= 120) {
             //Set the active link based on the section Id
             setActiveLink(sectionIds[i]);
@@ -102,7 +104,7 @@ function NavBar() {
   }, []);
 
   return (
-    <StyledNavBar>
+    <StyledNavBar className={isNavOpen ? '' : 'nav-closed'}>
       <li>
         <PicName />
       </li>
