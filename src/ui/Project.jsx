@@ -20,6 +20,12 @@ const StyledProject = styled.div`
   @media only screen and (max-width: 1730px) {
     width: 850px;
   }
+
+  @media only screen and (max-width: 890px) {
+    width: auto;
+    margin-left: 32px;
+    margin-right: 36px;
+  }
 `;
 
 const Row = styled.div`
@@ -27,7 +33,13 @@ const Row = styled.div`
   justify-content: space-around;
   gap: 36px;
   padding-bottom: 24px;
-  padding-left: 28px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  @media only screen and (max-width: 890px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Header = styled.h2`
@@ -62,11 +74,21 @@ const ButtonBox = styled.div`
       height: 40px !important;
     }
   }
+
+  @media only screen and (max-width: 890px) {
+    flex-direction: column;
+    width: auto;
+    gap: 40px;
+
+    & button {
+      width: 100% !important;
+      height: 50px !important;
+    }
+  }
 `;
 
 const SecondDiv = styled.div`
   position: relative;
-  margin-right: 24px;
 `;
 
 function Project({

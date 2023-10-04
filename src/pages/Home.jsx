@@ -5,10 +5,6 @@ import Typed from 'react-typed';
 import Container from '../ui/Container';
 
 const StyledHome = styled.div`
-  color: #e7e7e8;
-  /* background-color: white; */
-  /* border: 1px solid white; */
-
   display: flex;
   text-align: center;
   align-items: center;
@@ -114,13 +110,14 @@ function Home() {
           <Introduction>
             <StyledName>Keddy Conway</StyledName>
             <Row>
-              <p className="test">Junior</p>
+              <p className="typed">Junior</p>
               <Typed
                 style={{ fontSize: '1rem' }}
-                className="test"
+                className="typed"
                 strings={['Web Developer', 'Software Engineer']}
-                typeSpeed={90}
-                backSpeed={110}
+                typeSpeed={35}
+                backSpeed={35}
+                backDelay={2000}
                 loop={true}
               ></Typed>
             </Row>

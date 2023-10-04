@@ -4,8 +4,9 @@ const StyledHeading = styled.h1`
   color: #f0e7fb;
   text-align: center;
   position: relative;
-  font-weight: 400;
+  font-weight: 300;
   display: inline-block;
+  letter-spacing: 2px;
 
   &:before {
     width: 100px;
@@ -31,6 +32,10 @@ const StyledHeading = styled.h1`
     right: 0;
 
     content: '';
+  }
+
+  @media only screen and (max-width: 530px) {
+    font-size: 3rem !important;
   }
 `;
 

@@ -12,6 +12,23 @@ const StyledPhoneEmail = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 1340px) {
+    flex-direction: column;
+
+    margin-left: 24px;
+    margin-right: 24px;
+
+    width: auto;
+    min-width: 550px;
+    height: 150px;
+  }
+
+  @media only screen and (max-width: 580px) {
+    width: 350px;
+    min-width: 0;
+    height: 105px;
+  }
 `;
 
 const StyledInfo = styled.div`
@@ -26,11 +43,25 @@ const StyledInfo = styled.div`
     width: 32px;
     stroke: #6812da;
   }
+
+  @media only screen and (max-width: 580px) {
+    gap: 16px;
+    & svg {
+      height: 24px;
+      width: 24px;
+
+      margin-left: 64px;
+    }
+  }
 `;
 
 const StyledP = styled.p`
   font-size: 1.4rem;
   letter-spacing: 2px;
+
+  @media only screen and (max-width: 580px) {
+    font-size: 1rem;
+  }
 `;
 
 function PhoneEmail() {

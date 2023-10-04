@@ -6,11 +6,10 @@ import EducationComponent from '../ui/EducationComponent';
 import SkillComponent from '../ui/SkillComponent';
 
 const StyledEducationAndSkills = styled.div`
-  background-color: gray;
   display: flex;
   justify-content: space-around;
 
-  width: 1100px;
+  width: 1150px;
   height: 600px;
   margin: auto;
 `;
@@ -27,25 +26,53 @@ const Skills = styled.div`
   gap: 29px;
 `;
 
+const StyledGrid = styled.div`
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 44px;
+
+  margin-top: 46px;
+`;
+
 function EducationPage() {
   return (
     <Section height={'auto'} id="education">
       <Container>
-        <Heading>Education/Skills</Heading>
+        <Heading>EDUCATION</Heading>
         <StyledEducationAndSkills>
           <Education>
-            <Heading fontSize="1rem">Education</Heading>
-            <EducationComponent />
             <EducationComponent />
           </Education>
           <Skills>
-            <Heading fontSize="1rem">Skills</Heading>
-            <SkillComponent />
-            <SkillComponent />
-            <SkillComponent />
-            <SkillComponent />
-            <SkillComponent />
-            <SkillComponent />
+            {/* <HeadingSmall>Skills</HeadingSmall> */}
+            <StyledGrid>
+              <SkillComponent
+                skill={'React.js'}
+                picture={'/SkillPics/React.png'}
+              />
+              <SkillComponent
+                skill={'React.js'}
+                picture={'/SkillPics/NodeJs.svg'}
+              />
+              <SkillComponent
+                skill={'React.js'}
+                picture={'/SkillPics/NetCore.png'}
+                size={{ width: '113px', height: '113px' }}
+              />
+              <SkillComponent
+                skill={'React.js'}
+                picture={'/SkillPics/SQL.svg'}
+              />
+              <SkillComponent
+                skill={'React.js'}
+                picture={'/SkillPics/csharp.svg'}
+                size={{ width: '130px', height: '130px' }}
+              />
+              <SkillComponent
+                skill={'React.js'}
+                picture={'/SkillPics/Java.svg'}
+              />
+            </StyledGrid>
           </Skills>
         </StyledEducationAndSkills>
       </Container>

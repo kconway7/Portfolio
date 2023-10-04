@@ -22,16 +22,40 @@ const StyledContactMe = styled.form`
   box-shadow: 7px 7px 4px #07090c;
   position: relative;
   padding-bottom: 24px;
+
+  @media only screen and (max-width: 1340px) {
+    width: 750px;
+  }
+
+  @media only screen and (max-width: 790px) {
+    width: 550px;
+  }
+
+  @media only screen and (max-width: 580px) {
+    width: 350px;
+    height: auto;
+  }
 `;
 
 const StyledHeader = styled.h2`
   margin-left: 32px;
   padding-top: 32px;
+
+  @media only screen and (max-width: 580px) {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 4px;
+  }
 `;
 
 const Row = styled.div`
   display: flex;
   justify-content: space-around;
+
+  @media only screen and (max-width: 580px) {
+    flex-direction: column;
+    gap: 12px;
+  }
 `;
 
 const StyledInput = styled.input`
@@ -41,28 +65,51 @@ const StyledInput = styled.input`
   padding: 16px;
   font-size: 1.2rem;
   margin-top: 12px;
+
+  @media only screen and (max-width: 580px) {
+    width: 82%;
+    margin-left: 4%;
+  }
 `;
 
 const StyledSubject = styled.input`
   background-color: #0a0d12;
-  width: 902px;
+  width: 90%;
   border: 1px solid #262b31;
   padding: 16px;
   margin-top: 24px;
-  margin-left: 32px;
+  margin-left: 2.8%;
   font-size: 1.2rem;
+
+  @media only screen and (max-width: 790px) {
+    margin-left: 2%;
+  }
+
+  @media only screen and (max-width: 580px) {
+    width: 82%;
+    margin-left: 4%;
+  }
 `;
 
 const StyledMessage = styled.textarea`
   background-color: #0a0d12;
-  width: 902px;
+  width: 90%;
   border: 1px solid #262b31;
   padding: 16px;
   padding-bottom: 140px;
   margin-top: 24px;
-  margin-left: 32px;
+  margin-left: 2.8%;
   font-size: 1.2rem;
   resize: none;
+
+  @media only screen and (max-width: 790px) {
+    margin-left: 2%;
+  }
+
+  @media only screen and (max-width: 580px) {
+    width: 82%;
+    margin-left: 4%;
+  }
 `;
 
 const StyledButtonBar = styled.div`
