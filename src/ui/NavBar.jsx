@@ -34,6 +34,10 @@ const StyledNavBar = styled.ul`
   background-color: #0a0d12;
   overflow: hidden;
   transition: 0.5s;
+
+  @media only screen and (max-width: 800px) {
+    gap: 200px;
+  }
 `;
 
 const StyledCircle = styled.div`

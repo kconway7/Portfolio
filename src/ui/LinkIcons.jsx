@@ -8,6 +8,10 @@ const StyledLinkIcons = styled.div`
   bottom: 3%;
   left: 40%;
 
+  @media only screen and (max-width: 800px) {
+    bottom: 15%;
+  }
+
   & svg {
     height: 1.2rem;
     width: 1.2rem;
