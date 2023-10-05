@@ -66,7 +66,7 @@ function EducationPage() {
   return (
     <Section height={'auto'} id="education">
       <Container>
-        <Heading className={'test'}>EDUCATION & SKILLS</Heading>
+        <Heading className={'education-header'}>EDUCATION & SKILLS</Heading>
         <StyledEducationAndSkills>
           <Education>
             <EducationComponent />

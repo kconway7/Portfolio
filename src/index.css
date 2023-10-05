@@ -57,7 +57,7 @@ input:-webkit-autofill:focus {
   padding-right: 7px;
 }
 
-.test {
+.education-header {
   @media only screen and (max-width: 600px) {
     font-size: 2.8rem !important;
   }
@@ -68,5 +68,11 @@ input:-webkit-autofill:focus {
 
   @media only screen and (max-width: 395px) {
     font-size: 2rem !important;
+  }
+}
+
+.contact-header {
+  @media only screen and (max-width: 510px) {
+    font-size: 2.8rem !important;
   }
 }

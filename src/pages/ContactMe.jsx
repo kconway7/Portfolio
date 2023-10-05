@@ -156,7 +156,7 @@ function ContactMe() {
   return (
     <Section height={'auto'} id="contact">
       <Container>
-        <Heading>GET IN TOUCH</Heading>
+        <Heading className={'contact-header'}>GET IN TOUCH</Heading>
         <PhoneEmail />
         {isLoading ? (
           <SpinnerContainer>

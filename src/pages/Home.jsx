@@ -60,11 +60,14 @@ const StyledImage = styled.img`
   }
 
   @media only screen and (max-width: 880px) {
-    max-width: 450px;
-    max-height: 450px;
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: 400px;
     margin: 0;
+  }
+
+  @media only screen and (max-width: 450px) {
+    width: 300px;
+    height: 300px;
   }
 `;
 
@@ -126,7 +129,7 @@ function Home() {
               career. If you are looking for self-starter that is studious and
               eager to learn more, contact me!
             </StyledParagraph>
-            <Button width={'160px'} height={'40px'}>
+            <Button width={'190px'} height={'40px'}>
               Download CV
             </Button>
           </Introduction>

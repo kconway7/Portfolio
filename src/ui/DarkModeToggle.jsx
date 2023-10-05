@@ -19,6 +19,13 @@ const StyledButton = styled.button`
   right: 17px;
   z-index: 6;
 
+  padding: 0;
+
+  & svg {
+    fill: orange;
+    stroke: orange;
+  }
+
   @media screen and (max-width: 1150px) {
     top: 80px;
   }
@@ -27,7 +34,7 @@ const StyledButton = styled.button`
 function DarkModeToggle() {
   return (
     <StyledButton>
-      <FaSun style={{ fill: 'orange' }} />
+      <FaSun />
     </StyledButton>
   );
 }
