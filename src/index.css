@@ -25,6 +25,7 @@ $purple #f0e7fb
 body {
   margin: 0;
   background-color: #0e131a;
+  -webkit-text-size-adjust: 100%;
 }
 
 ::-webkit-scrollbar {
