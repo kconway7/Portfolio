@@ -4,6 +4,9 @@ import styled from 'styled-components';
 const StyledLinkIcons = styled.div`
   display: flex;
   gap: 1rem;
+  position: absolute;
+  bottom: 3%;
+  left: 40%;
 
   & svg {
     height: 1.2rem;

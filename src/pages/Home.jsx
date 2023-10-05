@@ -28,7 +28,7 @@ const StyledHome = styled.div`
     width: auto;
     padding-left: 16px;
     padding-right: 16px;
-    padding-top: 14vh;
+    padding-top: 40px;
   }
 `;
 

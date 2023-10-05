@@ -18,6 +18,7 @@ const StyledNavBar = styled.ul`
   list-style-type: none;
   flex-direction: column;
   align-items: center;
+  position: relative;
 
   top: 0;
   left: 0;
@@ -33,15 +34,6 @@ const StyledNavBar = styled.ul`
   background-color: #0a0d12;
   overflow: hidden;
   transition: 0.5s;
-
-  li:last-of-type {
-    margin-top: auto;
-    margin-bottom: 20px;
-  }
-
-  /* @media only screen and (max-width: 1000px) {
-    gap: 10px;
-  } */
 `;
 
 const StyledCircle = styled.div`
