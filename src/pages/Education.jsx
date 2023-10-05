@@ -12,6 +12,12 @@ const StyledEducationAndSkills = styled.div`
   width: 1150px;
   height: 600px;
   margin: auto;
+
+  @media only screen and (max-width: 1430px) {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
 `;
 
 const Education = styled.div`
@@ -32,13 +38,35 @@ const StyledGrid = styled.div`
   gap: 44px;
 
   margin-top: 46px;
+
+  @media only screen and (max-width: 1430px) {
+    grid-template-columns: auto auto auto;
+    margin-left: 30px;
+    gap: 30px;
+  }
+
+  @media only screen and (max-width: 640px) {
+    margin-left: 0px;
+  }
+
+  @media only screen and (max-width: 530px) {
+    grid-template-columns: auto auto;
+    gap: 24px;
+    margin-left: 36px;
+  }
+
+  @media only screen and (max-width: 470px) {
+    grid-template-columns: auto auto;
+    gap: 20px;
+    margin-left: 12px;
+  }
 `;
 
 function EducationPage() {
   return (
     <Section height={'auto'} id="education">
       <Container>
-        <Heading>EDUCATION</Heading>
+        <Heading className={'test'}>EDUCATION & SKILLS</Heading>
         <StyledEducationAndSkills>
           <Education>
             <EducationComponent />

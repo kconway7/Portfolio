@@ -33,15 +33,13 @@ const StyledHeading = styled.h1`
 
     content: '';
   }
-
-  @media only screen and (max-width: 530px) {
-    font-size: 3rem !important;
-  }
 `;
 
-function Heading({ children, fontSize = '3.6rem' }) {
+function Heading({ children, fontSize = '3.6rem', className }) {
   return (
-    <StyledHeading style={{ fontSize: fontSize }}>{children}</StyledHeading>
+    <StyledHeading className={className} style={{ fontSize: fontSize }}>
+      {children}
+    </StyledHeading>
   );
 }
 

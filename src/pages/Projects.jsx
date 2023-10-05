@@ -56,7 +56,7 @@ function Projects() {
               '/ProjectPics/WildOasis3.png',
             ]}
             description={
-              'Dummy in-house software used to replicate a cabin lodging companies need to manage their cabins, guests and bookings.'
+              'Web application used to replicate a cabin lodging companies need to manage their cabins, guests and bookings.'
             }
             name="THE WILD OASIS"
             tech="React, Supabase"

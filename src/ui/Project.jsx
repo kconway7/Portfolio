@@ -63,7 +63,8 @@ const ButtonBox = styled.div`
   display: flex;
   gap: 32px;
   position: relative;
-  margin-top: 26px;
+  margin-top: 36px;
+  bottom: 0px;
 
   @media only screen and (max-width: 1730px) {
     justify-content: space-around;
@@ -79,9 +80,10 @@ const ButtonBox = styled.div`
     flex-direction: column;
     width: auto;
     gap: 40px;
+    align-items: center;
 
     & button {
-      width: 100% !important;
+      width: 90% !important;
       height: 50px !important;
     }
   }
@@ -124,10 +126,10 @@ function Project({
           <Technologies>TECH USED: {tech}</Technologies>
           <Description>{description}</Description>
           <ButtonBox>
-            <Button href={hrefDemo} height={'30px'} width={'120px'}>
+            <Button href={hrefDemo} height={'35px'} width={'130px'}>
               View Demo
             </Button>
-            <Button href={hrefCode} height={'30px'} width={'120px'}>
+            <Button href={hrefCode} height={'35px'} width={'130px'}>
               View Code
             </Button>
           </ButtonBox>

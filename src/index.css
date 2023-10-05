@@ -55,3 +55,17 @@ input:-webkit-autofill:focus {
   font-weight: 500;
   padding-right: 7px;
 }
+
+.test {
+  @media only screen and (max-width: 600px) {
+    font-size: 2.8rem !important;
+  }
+
+  @media only screen and (max-width: 500px) {
+    font-size: 2.2rem !important;
+  }
+
+  @media only screen and (max-width: 395px) {
+    font-size: 2rem !important;
+  }
+}
