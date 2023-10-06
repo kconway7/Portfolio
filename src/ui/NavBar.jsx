@@ -18,7 +18,6 @@ const StyledNavBar = styled.ul`
   list-style-type: none;
   flex-direction: column;
   align-items: center;
-  position: relative;
 
   top: 0;
   left: 0;
@@ -28,7 +27,7 @@ const StyledNavBar = styled.ul`
   margin: 0;
   padding: 0;
   width: 280px;
-  height: 100vh;
+  height: 100dvh;
   gap: 250px;
 
   background-color: #0a0d12;
