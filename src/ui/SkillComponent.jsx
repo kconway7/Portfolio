@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 const StyledSkillComponent = styled.div`
   display: flex;
-  background-color: #0a0d12;
+  background-color: var(--color-charcoal-shade1);
   width: 140px;
   height: 140px;
   border-radius: 50%;
 
-  box-shadow: 4px 4px 3px #07090c;
+  box-shadow: 4px 4px 3px var(--color-charcoal-shade2);
 
   align-items: center;
   justify-content: center;

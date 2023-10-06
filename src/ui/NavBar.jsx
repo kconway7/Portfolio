@@ -30,7 +30,7 @@ const StyledNavBar = styled.ul`
   height: 100dvh;
   gap: 250px;
 
-  background-color: #0a0d12;
+  background-color: var(--color-charcoal-shade1);
   overflow: hidden;
   transition: 0.5s;
 

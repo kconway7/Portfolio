@@ -2,10 +2,10 @@ import styled from 'styled-components';
 import { FiPhone, FiMail } from 'react-icons/fi';
 
 const StyledPhoneEmail = styled.div`
-  background-color: #0a0d12;
+  background-color: var(--color-charcoal-shade1);
   width: 1000px;
   height: 70px;
-  box-shadow: 5px 5px 3px #07090c;
+  box-shadow: 5px 5px 3px var(--color-charcoal-shade2);
 
   margin-bottom: 36px;
 

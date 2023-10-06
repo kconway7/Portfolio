@@ -10,7 +10,7 @@ import ContactMe from '../pages/ContactMe';
 import MobHeader from './MobHeader';
 
 const Main = styled.div`
-  background-color: #0e131a;
+  background-color: var(--color-charcoal-main);
   position: relative;
   width: calc(100vw - 280px);
   left: 280px;

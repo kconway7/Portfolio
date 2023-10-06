@@ -2,10 +2,12 @@ import { BrowserRouter } from 'react-router-dom';
 import AppLayout from './ui/AppLayout';
 import { Toaster } from 'react-hot-toast';
 import { GlobalContextProvider } from './context/ContextProvider';
+import GlobalStyles from './style/GlobalStyles';
 
 function App() {
   return (
     <GlobalContextProvider>
+      <GlobalStyles />
       <BrowserRouter>
         <AppLayout />
         <Toaster
@@ -23,8 +25,8 @@ function App() {
               fontSize: '16px',
               maxWidth: '500px',
               padding: '16px 24px',
-              color: '#f0e7fb',
-              backgroundColor: '#0a0d12',
+              color: 'var(--color-purple-tint1)',
+              backgroundColor: 'var(--color-charcoal-shade1)',
             },
           }}
         />

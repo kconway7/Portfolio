@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledHeading = styled.h1`
-  color: #f0e7fb;
+  color: var(--color-purple-tint1);
   text-align: center;
   position: relative;
   font-weight: 300;

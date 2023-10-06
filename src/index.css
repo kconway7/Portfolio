@@ -18,13 +18,12 @@ $purple #f0e7fb
 
 * {
   font-family: 'Karla', sans-serif;
-  color: #f0e7fb;
+  color: var(--color-text-main);
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  background-color: #0e131a;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -34,7 +33,7 @@ body {
 
 /* Active classes for scrollspy */
 .active {
-  font-weight: 700 !important;
+  font-weight: 800 !important;
   color: #6812da !important;
 }
 

@@ -5,7 +5,6 @@ const StyledImage = styled.img`
   height: 150px;
   display: block;
   margin: 7vh auto 0 auto;
-  border: 6px solid white;
   border-radius: 100%;
 `;
 
@@ -14,7 +13,7 @@ const StyledPicName = styled.div`
 
   & p {
     font-size: 1.2rem;
-    font-weight: lighter;
+    font-weight: 300;
     margin-top: 0.8rem;
     text-align: center;
     letter-spacing: 3px;

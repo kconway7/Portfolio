@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 import { FaSun } from 'react-icons/fa';
+import { BsMoonFill } from 'react-icons/bs';
+
+import { useGlobalContext } from '../context/ContextProvider';
 
 const StyledButton = styled.button`
   width: 55px;
   height: 55px;
-  background-color: #f0e7fb;
+  background-color: var(--color-purple-tint1);
   border-radius: 50%;
   border: 0;
 
@@ -22,8 +25,7 @@ const StyledButton = styled.button`
   padding: 0;
 
   & svg {
-    fill: orange;
-    stroke: orange;
+    fill: var(--color-darkbutton);
   }
 
   @media screen and (max-width: 1150px) {
@@ -32,9 +34,11 @@ const StyledButton = styled.button`
 `;
 
 function DarkModeToggle() {
+  const { isDarkMode, toggleDarkMode } = useGlobalContext();
+
   return (
-    <StyledButton>
-      <FaSun />
+    <StyledButton onClick={toggleDarkMode}>
+      {isDarkMode ? <FaSun /> : <BsMoonFill />}
     </StyledButton>
   );
 }

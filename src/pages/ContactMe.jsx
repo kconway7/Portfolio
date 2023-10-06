@@ -16,10 +16,10 @@ import Heading from '../ui/Heading';
 import PhoneEmail from '../ui/PhoneEmail';
 
 const StyledContactMe = styled.form`
-  background-color: #0a0d12;
+  background-color: var(--color-charcoal-shade1);
   width: 1000px;
   height: 550px;
-  box-shadow: 7px 7px 4px #07090c;
+  box-shadow: 7px 7px 4px var(--color-charcoal-shade2);
   position: relative;
   padding-bottom: 24px;
 
@@ -59,9 +59,9 @@ const Row = styled.div`
 `;
 
 const StyledInput = styled.input`
-  background-color: #0a0d12;
+  background-color: var(--color-charcoal-shade1);
   width: 40%;
-  border: 1px solid #262b31;
+  border: 1px solid var(--color-charcoal-tint1);
   padding: 16px;
   font-size: 1.2rem;
   margin-top: 12px;
@@ -73,9 +73,9 @@ const StyledInput = styled.input`
 `;
 
 const StyledSubject = styled.input`
-  background-color: #0a0d12;
+  background-color: var(--color-charcoal-shade1);
   width: 90%;
-  border: 1px solid #262b31;
+  border: 1px solid var(--color-charcoal-tint1);
   padding: 16px;
   margin-top: 24px;
   margin-left: 2.8%;
@@ -92,9 +92,9 @@ const StyledSubject = styled.input`
 `;
 
 const StyledMessage = styled.textarea`
-  background-color: #0a0d12;
+  background-color: var(--color-charcoal-shade1);
   width: 90%;
-  border: 1px solid #262b31;
+  border: 1px solid var(--color-charcoal-tint1);
   padding: 16px;
   padding-bottom: 140px;
   margin-top: 24px;

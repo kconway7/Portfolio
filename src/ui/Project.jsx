@@ -6,15 +6,15 @@ import Button from './Button';
 
 const StyledProject = styled.div`
   width: 700px;
-  background-color: #0a0d12;
+  background-color: var(--color-charcoal-shade1);
   padding-bottom: 10px;
 
   transition: ease-in-out;
   transition-duration: 250ms;
-  box-shadow: 5px 5px 3px #07090c;
+  box-shadow: 5px 5px 3px var(--color-charcoal-shade2);
 
   &:hover {
-    background-color: #0d0f14;
+    background-color: var(--color-project-hover);
   }
 
   @media only screen and (max-width: 1730px) {
@@ -43,18 +43,18 @@ const Row = styled.div`
 `;
 
 const Header = styled.h2`
-  color: #f0e7fb;
+  color: var(--color-purple-tint1);
   text-align: center;
   line-height: 1;
   letter-spacing: 1px;
 `;
 
 const Description = styled.div`
-  color: #f0e7fb;
+  color: var(--color-purple-tint1);
 `;
 
 const Technologies = styled.h3`
-  color: #f0e7fb;
+  color: var(--color-purple-tint1);
   margin-top: -3px;
   margin-bottom: 12px;
 `;

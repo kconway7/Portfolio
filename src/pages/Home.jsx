@@ -51,7 +51,6 @@ const Introduction = styled.div`
 const StyledImage = styled.img`
   height: 500px;
   margin: auto;
-  border: 3px solid white;
   border-radius: 100%;
 
   @media only screen and (max-width: 1560px) {
@@ -72,6 +71,7 @@ const StyledImage = styled.img`
 `;
 
 const StyledName = styled.h1`
+  color: var(--color-text-main);
   font-size: 3.6rem;
   font-weight: 800;
   line-height: 1;
@@ -83,6 +83,7 @@ const StyledName = styled.h1`
 `;
 
 const StyledParagraph = styled.p`
+  color: var(--color-text-main);
   font-weight: lighter;
   font-size: 1.2rem;
   line-height: 1.8;
@@ -90,7 +91,7 @@ const StyledParagraph = styled.p`
 `;
 
 const StyledCircle = styled.div`
-  background-color: #0a0d12;
+  background-color: var(--color-charcoal-shade1);
   position: absolute;
   right: -20vh;
   top: -20vh;

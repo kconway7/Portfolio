@@ -11,7 +11,7 @@ const StyledSection = styled.section`
     left: 12.5%;
     bottom: 0;
     width: 75%;
-    border-bottom: 1px solid #262b31;
+    border-bottom: 1px solid var(--color-charcoal-tint1);
   }
 `;
 

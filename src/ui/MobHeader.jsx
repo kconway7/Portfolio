@@ -8,13 +8,12 @@ const StyledMobHeader = styled.div`
   top: 0;
   height: 70px;
   width: 100%;
-  background-color: red;
   z-index: 20;
   box-shadow: 1px 0px 1px black;
 
   @media screen and (max-width: 1150px) {
     display: block;
-    background-color: #0a0d12;
+    background-color: var(--color-charcoal-shade1);
   }
 `;
 
@@ -31,7 +30,8 @@ const Row = styled.div`
     padding: 6px;
 
     background-color: #6812da;
-    stroke: #f0e7fb;
+    fill: #f0e7fb;
+    stroke: var(--color-purple-tint1);
     cursor: pointer;
   }
 
@@ -39,6 +39,7 @@ const Row = styled.div`
     font-weight: 800;
     font-size: 1.8rem;
     line-height: 0;
+    color: var(--color-text-main);
   }
 `;
 

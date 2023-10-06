@@ -4,6 +4,24 @@ const GlobalContext = createContext();
 
 function GlobalContextProvider({ children }) {
   const [isNavOpen, setIsNavOpen] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
+  useEffect(
+    function () {
+      if (isDarkMode) {
+        document.documentElement.classList.add('dark-mode');
+        document.documentElement.classList.remove('light-mode');
+      } else {
+        document.documentElement.classList.add('light-mode');
+        document.documentElement.classList.remove('dark-mode');
+      }
+    },
+    [isDarkMode]
+  );
+
+  function toggleDarkMode() {
+    setIsDarkMode((isDark) => !isDark);
+  }
 
   useEffect(() => {
     function checkWindowSize() {
@@ -33,6 +51,8 @@ function GlobalContextProvider({ children }) {
       value={{
         isNavOpen,
         toggleNav,
+        isDarkMode,
+        toggleDarkMode,
       }}
     >
       {children}

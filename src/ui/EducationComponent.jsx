@@ -42,8 +42,8 @@ const Row = styled.div`
   gap: 8px;
 
   & svg {
-    height: 36px;
-    width: 36px;
+    height: 38px;
+    width: 38px;
     stroke: #6812da;
   }
 `;
@@ -53,26 +53,27 @@ const HeaderSmall = styled.h3`
   margin-top: 0;
   margin-bottom: 6px;
 
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 `;
 
 const Degree = styled.h4`
   margin-top: 0px;
   margin-bottom: 36px;
+  padding-left: 9px;
 
   line-height: 1;
+  font-size: 1.3rem;
   font-weight: 500;
   font-style: italic;
   text-align: center;
-  padding-left: 9px;
 `;
 
 const TextDiv = styled.div`
-  width: 390px;
+  width: 580px;
   height: auto;
 
-  background-color: #0a0d12;
-  box-shadow: 5px 5px 4px #07090c;
+  background-color: var(--color-charcoal-shade1);
+  box-shadow: 5px 5px 4px var(--color-charcoal-shade2);
   padding: 24px;
   padding-bottom: 14px;
   padding-left: 14px;
@@ -86,7 +87,7 @@ const TextDiv = styled.div`
 
 const StyledListItem = styled.li`
   margin-bottom: 3px;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 
   @media only screen and (max-width: 470px) {
     font-size: 0.95rem;
