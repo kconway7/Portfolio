@@ -130,7 +130,13 @@ function Home() {
               career. If you are looking for self-starter that is studious and
               eager to learn more, contact me!
             </StyledParagraph>
-            <Button width={'190px'} height={'40px'}>
+            <Button
+              href={
+                'https://drive.google.com/uc?export=download&id=1NVpbPp4kIt5gHUTgOD9oIulZlp5bJt4v'
+              }
+              width={'190px'}
+              height={'40px'}
+            >
               Download CV
             </Button>
           </Introduction>
